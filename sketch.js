@@ -92,10 +92,10 @@ function draw() {
   background(backgroundImg);
   textSize(20);
   fill("black")
-  text("Score: "+ score,200,50);
+  text("Score: "+ score,width-100,50);
   
  // if(count===1)
-    text("HS : "+ highScore, 30,50);
+    text("HS : "+ highScore,width-200,50);
   
   if (gameState===PLAY){
     score = score + Math.round(getFrameRate()/60);
